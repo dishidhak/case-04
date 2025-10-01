@@ -48,7 +48,6 @@ def submit_survey():
         consent=submission.consent,
         rating=submission.rating,
         comments=submission.comments,
-        source=submission.source,
         user_agent=submission.user_agent,
 
         hashed_email = hashed_email,
