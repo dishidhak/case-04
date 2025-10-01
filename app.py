@@ -43,7 +43,7 @@ def submit_survey():
     submission_id = submission.submission_id or sha256_hex(email_norm + hour_stamp)
 
     record = StoredSurveyRecord(
-# hi
+
         name=submission.name,
         consent=submission.consent,
         rating=submission.rating,
