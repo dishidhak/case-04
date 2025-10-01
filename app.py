@@ -7,7 +7,7 @@ from storage import append_json_line
 
 import hashlib
 
-def sha256_hex(s: str) -> str
+def sha256_hex(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()
 
 

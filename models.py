@@ -35,5 +35,5 @@ class StoredSurveyRecord(BaseModel):
     hashed_age: str
     submission_id: str
 
-    recieved_at: datatime
+    received_at: datetime
     ip: str
