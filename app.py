@@ -37,7 +37,7 @@ def submit_survey():
 
     email_norm = submission.email.strip().lower()
     hashed_email = sha256_hex(email_norm)
-    hashed_age = she256_hex(str(submission.age))
+    hashed_age = sha256_hex(str(submission.age))
 
     hour_stamp = datetime.now(timezone.utc).strftime("%Y%m%d%H")
     submission_id = submission.submission_id or sha256_hex(email_norm + hour_stamp)
